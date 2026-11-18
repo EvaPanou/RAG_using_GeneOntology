@@ -1,0 +1,227 @@
+QUESTION: How do cells digest and recycle their own components? | local | with retrieval
+Cells perform digestive functions through various mechanisms:
+
+1. **Digestion**: This involves breaking down ingested nutrients into simpler forms that can be absorbed and utilized for energy or other metabolic processes. It includes both mechanical (e.g., chewing) and chemical (e.g., proteolysis) steps.
+
+2. **Cellular Component Disassembly**: This process removes damaged or non-functional cellular components, allowing them to be recycled or reused within the cell.
+
+3. **Cellular Component Maintenance**: This ensures that each cellular component remains in an optimal functional or structural state, maintaining its functionally important properties.
+
+4. **Polysaccharide Digestion**: This involves the breakdown of complex carbohydrates into simple sugars, which are then used as building blocks for new cell structures or stored for future use.
+
+5. **Septum Dissection After Cytokinesis**: This refers to the separation of the septal cell wall material during the endocytic pathway, where enzymes break down the outer layer of the cell membrane.
+
+These processes collectively enable cells to efficiently manage and recycle their internal components, ensuring they remain vital for life activities while also being able to adapt and repair themselves when necessary.
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How do cells digest and recycle their own components? | local | without retrieval
+Cells perform several key processes to digest and recycle their own components:
+
+1. **Cell Membrane Fluidization**: This process involves the fluidization of cellular membranes, which allows for easier passage of substances through the cell membrane. It is crucial for maintaining the integrity of the cell's internal environment.
+
+2. **Membrane Lipidation**: During this process, lipids within the cell membrane are broken down into smaller molecules that can be reused or recycled. This helps in maintaining the cell's energy balance and overall health.
+
+3. **Lipid Digestion**: The breakdown of fats and other lipid compounds occurs in the cytoplasm. This process is essential for converting stored energy into usable forms (e.g., ATP) and for maintaining cellular homeostasis.
+
+4. **Protein Degradation**: Proteins are broken down into smaller peptides and amino acids during this process. This step is vital for various cellular functions such as protein synthesis, signal transduction, and immune response.
+
+5. **Nucleic Acid Degradation**: Nucleic acids, including DNA and RNA, are degraded in the nucleus. This process is critical for genetic information storage and replication.
+
+6. **Cellular Respiration**: Cellular respiration is the metabolic process that converts glucose and oxygen into energy-rich molecules (ATP, CO₂). This process is fundamental for sustaining life and growth.
+
+7. **Cellular Recycling**: Cells have mechanisms to recycle damaged organelles and proteins back into the cell. This
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How do cells repair damaged genetic material? | local | with retrieval
+Cells repair damaged genetic material through various mechanisms including:
+
+- **DNA Repair**: This involves processes such as direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, and double-strand break repair pathway. These pathways help restore damaged DNA to its original state.
+
+- **Viral DNA Repair**: Viral DNA can be repaired through mechanisms like viral DNA repair, which includes the use of enzymes to reverse damaged viral DNA.
+
+- **RNA Repair**: RNA molecules can also undergo repair processes, such as the repair of damaged RNA.
+
+- **Cell Wall Repair**: Cell walls play a crucial role in maintaining cellular integrity. They can be repaired through various mechanisms, including the restoration of cell wall organization following damage.
+
+- **DNA Repair-Dependent Chromatin Remodeling**: This process allows for the access of DNA repair enzymes to genomic DNA and helps in repairing DNA lesions within the cell.
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How do cells repair damaged genetic material? | local | without retrieval
+Cells repair damaged genetic material through various mechanisms including:
+
+- **DNA Repair Proteins**: These proteins play crucial roles in identifying and repairing DNA damage. Examples include:
+  - **Nucleotide Excision Repair (NER) Pathway**: Involved in removing nucleotides from DNA strands that have been damaged by UV radiation or other agents.
+  - **Methyl-Carboxylic Acid Ligase (MCL) Pathway**: This pathway is responsible for correcting errors during DNA replication and repair processes.
+
+- **Histone Deacetylases (HDACs)**: These enzymes modify histones, which are proteins that package DNA into chromatin. They help maintain proper chromosome structure and stability.
+
+- **Chromatin Remodeling Proteins**: These proteins help reorganize chromatin structures, facilitating DNA replication and repair.
+
+- **RNA Polymerases**: These enzymes synthesize new RNA molecules complementary to the template strand, playing a role in gene expression regulation.
+
+- **Protein Synthesis**: Cells use ribosomes to produce proteins necessary for DNA repair processes.
+
+These mechanisms collectively work together to ensure the integrity and function of genetic information within cells.
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: What is the process of programmed cell death? | local | with retrieval
+The process of programmed cell death involves several key stages:
+
+1. **Programmed Cell Death Induction**: This stage initiates when a cell receives an internal or external signal. It triggers a series of biochemical events within the cell, including signaling pathways.
+
+2. **Apoptosis Execution Phase**: Once activated, the cell enters the execution phase, where it undergoes various biochemical changes leading to cell death. Key phases include rounding-up of the cell, retraction of pseudopodes, reduction of cellular volume, chromatin condensation, nuclear fragmentation, and apoptosis body formation.
+
+3. **Apoptosis Body Formation**: As the cell dies, it forms apoptotic bodies, which contain remnants of the original cell's genetic material and other components necessary for cell survival.
+
+This process is crucial for maintaining organismal health and ensuring proper tissue repair during development and disease progression.
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: What is the process of programmed cell death? | local | without retrieval
+The process of programmed cell death (apoptosis) involves the orderly and controlled removal of cells through a series of biochemical events that occur in specific regulatory pathways. This process can be divided into several key stages:
+
+1. **Activation**: The initial signal leading to apoptosis occurs when a cellular stressor triggers the activation of signaling molecules such as the pro-apoptotic protein Bcl-2 or the anti-apoptotic protein Bcl-xL.
+
+2. **Activation of Caspases**: Activated caspase-8 and -9 cleave the target proteins, initiating the extracellular signal-regulated kinase (ERK) pathway, which leads to the activation of the cytoplasmic death receptor (CDR) family members, including Fas ligand (FasL), Fas receptor (FasR), and TNFRSF36.
+
+3. **Caspase Inhibition**: The activated caspases then inhibit their activity, preventing further degradation of the target proteins.
+
+4. **Apoptosome Formation**: The resulting apoptosomes form, containing the target proteins and their associated proteins. These apoptosomes are then engulfed by the phagolysosome, where they undergo further processing and fragmentation.
+
+5. **Phagolysosome Degradation**: The fragmented apoptosomes are degraded by lysosomal enzymes, releasing the components back into the cytosol.
+
+This process ensures that only necessary cells are eliminated while minimizing damage to other cells. It plays a crucial role
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How do cells respond to oxidative stress? | local | with retrieval
+Cells respond to oxidative stress through various mechanisms including:
+
+- **Regulation of Cellular Response to Oxidative Stress**: This involves processes that modulate the frequency, rate, or extent of cellular responses to oxidative stress. Examples include changes in gene expression, enzyme production, and movement patterns.
+
+- **Response to Oxidative Stress**: This refers to the overall cellular response to oxidative stress, which can be either beneficial (e.g., increased enzyme production) or detrimental (e.g., reduced cell function).
+
+- **Positive Regulation of Cellular Response to Oxidative Stress**: This type of regulation involves activating or increasing the frequency, rate, or extent of cellular responses to oxidative stress. For example, enzymes may become more active, leading to enhanced metabolic processes.
+
+- **Oxidative Stress-Induced Premature Senescence**: This phenomenon describes a cellular senescence process where a cell's function is prematurely eliminated due to oxidative stress, characterized by the dismantling of the cell as a response to elevated levels of reactive oxygen species, such as superoxide anions, hydrogen peroxide, and hydroxyl radicals.
+
+These terms collectively describe how cells adapt to and respond to oxidative stress, influencing their growth, metabolism, and survival.
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How do cells respond to oxidative stress? | local | without retrieval
+Cells respond to oxidative stress through various mechanisms involving the activation of antioxidant enzymes and the production of reactive oxygen species (ROS). These processes include:
+
+- **Activation of Antioxidant Enzymes**: Cells produce superoxide dismutase (SOD), catalase (CAT), and glutathione peroxidase (GPx) to neutralize ROS. SOD is particularly important as it can convert hydrogen peroxide into water and oxygen gas, while CAT converts H2O2 to water and O2. GPx also plays a role in reducing ROS to harmless molecules.
+
+- **Production of Reactive Oxygen Species (ROS)**: The generation of ROS is crucial for cellular functions such as DNA repair, protein synthesis, and energy metabolism. ROS can be further converted into other forms like hydroperoxides or nitric oxide (NO).
+
+- **Reduction of ROS**: This process involves the transfer of electrons between atoms, which reduces the number of electrons available for oxidation. This reduction leads to the formation of stable radicals that can react with other molecules, potentially causing damage.
+
+- **Inhibition of Oxidative Phospholipase A(3)**: This enzyme is involved in the breakdown of phosphatidylinositol (PI) to form diacylglycerol (DAG), which then reacts with free fatty acids to form triglycerides. In oxidative stress conditions, this reaction is inhibited, leading to reduced lipid peroxidation.
+
+- **Inhibition of Peroxiredox
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How is insulin released from pancreatic cells? | local | with retrieval
+Insulin is released from pancreatic cells through a catabolic process involving the breakdown of insulin. This process includes the controlled release of amylase from the pancreas, which breaks down carbohydrates into simpler sugars for energy. Additionally, insulin stimulates the pancreas to secrete more insulin, further regulating blood sugar levels. This mechanism ensures that the body can maintain normal blood sugar levels despite dietary restrictions or stress.
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How is insulin released from pancreatic cells? | local | without retrieval
+Insulin is released from pancreatic cells through a process involving several key steps:
+
+1. **Receptor Activation**: The first step involves the binding of insulin receptors on the surface of the cell membrane. This receptor recognizes and binds to specific insulin molecules.
+
+2. **Signal Transduction**: Once bound, the insulin receptor activates a signaling pathway that leads to the activation of intracellular signaling proteins such as protein kinase A (PKA).
+
+3. **Protein Kinase A Activation**: PKA phosphorylates target proteins, including insulin receptors, which can then be activated further.
+
+4. **Intracellular Signaling**: The activated insulin receptors bind to their respective intracellular signaling proteins, initiating a cascade of events leading to the release of insulin into the bloodstream.
+
+5. **Release Mechanism**: Insulin is released primarily via the translocation of insulin receptors onto the cell membrane, where they interact with insulin receptors on neighboring cells or other tissues, facilitating the release of insulin into the bloodstream.
+
+This process is crucial for maintaining blood glucose levels within normal ranges in the body.
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How do neurons pass signals across a synapse? | local | with retrieval
+Neurons pass signals across a synapse through various mechanisms involving cellular processes such as neurotransmitter release, ion channel activation, and protein synthesis. 
+
+Synaptic signaling involves the transfer of information from one neuron to another via chemical messengers called neurotransmitters. These neurotransmitters bind to specific receptors on the postsynaptic neuron's membrane, triggering a cascade of events including calcium influx, voltage-gated sodium channels opening, and changes in membrane potential. This leads to the release of other chemicals, such as acetylcholine, which can further modulate neuronal activity.
+
+The process also includes the formation of synapses, where the presynaptic and postsynaptic membranes come together, allowing for the exchange of ions, molecules, and proteins. The presynaptic membrane releases neurotransmitters, while the postsynaptic membrane receives them, initiating a chain reaction that ultimately results in the transmission of electrical signals down the axon.
+
+In summary, neurons use a combination of cellular processes and molecular mechanisms to convey information across synapses, enabling communication between different neurons and muscles.
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How do neurons pass signals across a synapse? | local | without retrieval
+Neurons communicate through neurotransmitters that bind to specific receptors on the postsynaptic neuron's membrane. When a neuron releases its neurotransmitter into the synaptic cleft, it triggers a chemical reaction within the presynaptic neuron. This reaction leads to the release of another neurotransmitter (acetylcholine) at the presynaptic terminal. The acetylcholine then binds to receptors on the postsynaptic neuron, causing a change in ion channels and voltage-gated sodium channels. This influx of sodium ions causes the postsynaptic neuron to generate an action potential, which propagates along the axon until it reaches the next neuron or effector cell.
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: chromatin remodelling | local | with retrieval
+Chromatin remodeling refers to a dynamic process where chromatin rearranges itself to change its structure, allowing for various cellular functions including DNA metabolism, repair, and replication. This includes:
+
+- **GO:0006338** - Chromatin remodeling: A dynamic process of chromatin reorganization resulting in changes to chromatin structure. These changes allow DNA metabolic processes such as transcriptional regulation, DNA recombination, DNA repair, and DNA replication.
+
+- **GO:0140861** - DNA repair-dependent chromatin remodeling: A chromatin remodeling process that allows DNA repair enzyme to access genomic DNA and repair DNA lesions.
+
+- **GO:0006325** - Chromatin organization: The assembly or remodeling of chromatin composed of DNA complexed with histones, other associated proteins, and sometimes RNA.
+
+- **GO:0140673** - Transcription elongation-coupled chromatin remodeling: A chromatin remodeling process that reestablishes the chromatin structure following the passage of RNA polymerase II during transcription elongation, thus preventing cryptic transcription initiation.
+
+- **GO:0045815** - Transcription initiation-coupled chromatin remodeling: An epigenetic mechanism of regulation of gene expression that involves chromatin remodeling to capacitate gene expression by either modifying the chromatin fiber, the nucleosomal histones, or the DNA.
+CITATION CHECK: {"cited": ["GO:0006325", "GO:0006338", "GO:0045815", "GO:0140673", "GO:0140861"], "inside_retrieved": ["GO:0006325", "GO:0006338", "GO:0045815", "GO:0140673", "GO:0140861"], "outside_retrieved": [], "existing_in_ontology": ["GO:0006325", "GO:0006338", "GO:0045815", "GO:0140673", "GO:0140861"], "not_in_ontology": [], "passes": true}
+
+QUESTION: chromatin remodelling | local | without retrieval
+Chromatin remodeling is a process that involves the modification and reorganization of chromatin structure in eukaryotic cells. This process occurs during various stages of cell division, including mitosis and meiosis. Key enzymes involved in chromatin remodeling include histone deacetylases (HDACs), which modify histones to facilitate DNA accessibility for transcription factors. Additionally, acetylation of histones by acetyltransferases (ATCs) leads to the formation of nucleosomes, which are the basic units of chromatin. Other important players include histone methyltransferases (HMTs) and lysine-specific demethylases (KSDs). These modifications help regulate gene expression by controlling access to specific DNA sequences.
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How does the body defend itself against bacteria? | local | with retrieval
+The body defends itself against bacteria through various mechanisms including:
+
+- **Regulation of Defense Response**: This involves any process that modulates the frequency, rate, or extent of the bacterial defense response. Examples include changes in immune system activity and hormonal responses.
+
+- **Positive Regulation of Defense Response**: This refers to processes that activate or increase the frequency, rate, or extent of the bacterial defense response. For instance, increased levels of pro-inflammatory cytokines can enhance the defense response.
+
+- **Defense Mechanism**: The body's ability to recognize and respond to specific types of bacteria, such as those causing food poisoning or antibiotic-resistant infections. This includes recognizing pathogenic bacteria (e.g., Salmonella) and developing protective mechanisms.
+
+- **Antibacterial Effector**: These are proteins produced by bacteria that target and destroy other organisms, including bacteria. They play crucial roles in maintaining homeostasis and preventing infection.
+
+- **Immune System Response**: The body's innate and adaptive immune systems work together to fight off pathogens. These systems recognize and neutralize foreign substances, including bacteria.
+
+- **Inflammatory Response**: This is a complex series of events where cells release chemicals that cause swelling and pain, leading to inflammation. It helps in tissue repair and healing.
+
+- **Cytokine Release**: Cytokines are signaling molecules released by infected cells into the bloodstream. They help coordinate the immune response and recruit additional immune cells.
+
+- **Bactericidal Antibodies**: These are antibodies that specifically bind
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+
+QUESTION: How does the body defend itself against bacteria? | local | without retrieval
+The body defends itself against bacteria through several mechanisms:
+
+1. Immune system response:
+- Bacteria can trigger immune responses in the body, including inflammation and production of antibodies.
+- The immune system recognizes foreign substances as harmful and mounts an attack to eliminate them.
+- Antibodies produced by the immune system target specific bacterial proteins or structures on the surface of bacteria.
+
+2. Physical barriers:
+- The skin acts as a physical barrier, preventing bacteria from entering the bloodstream.
+- The respiratory system helps remove bacteria from the airways during inhalation.
+- The digestive system helps break down food particles that might contain bacteria.
+
+3. Inflammation:
+- Inflammation is a natural defense mechanism where white blood cells (e.g., neutrophils) engulf and destroy bacteria.
+- This process leads to tissue damage and cell death, which can help kill bacteria.
+
+4. Cytokines:
+- Cytokines are signaling molecules released by immune cells that coordinate the immune response.
+- They play a crucial role in coordinating the various steps of the immune response.
+
+5. Antimicrobial peptides:
+- These are short protein fragments produced by certain bacteria that have antimicrobial properties.
+- They act as natural antibiotics and can inhibit bacterial growth.
+
+6. Hormonal regulation:
+- Hormones such as cortisol and adrenaline influence the immune system's function.
+- They can affect the inflammatory response and aid in the clearance of bacteria.
+
+7. Cell-mediated immunity:
+- This type of immunity involves T-cells attacking infected
+CITATION CHECK: {"cited": [], "inside_retrieved": [], "outside_retrieved": [], "existing_in_ontology": [], "not_in_ontology": [], "passes": false}
+

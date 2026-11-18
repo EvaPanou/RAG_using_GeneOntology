@@ -1,0 +1,9 @@
+question,correct_term,embedding_top_one,embedding_hit,embedding_related_hit,naive_hit,naive_related_hit
+How do cells digest and recycle their own components?,autophagy,False,False,False,False,False
+How do cells repair damaged genetic material?,DNA repair,True,True,True,False,True
+What is the process of programmed cell death?,apoptotic process,False,True,True,True,True
+How do cells respond to oxidative stress?,response to oxidative stress,False,True,True,False,False
+How is insulin released from pancreatic cells?,insulin secretion,False,False,True,False,False
+How do neurons pass signals across a synapse?,chemical synaptic transmission,False,False,True,True,True
+chromatin remodelling,chromatin remodeling,True,True,True,False,True
+How does the body defend itself against bacteria?,defense response to bacterium,True,True,True,False,True

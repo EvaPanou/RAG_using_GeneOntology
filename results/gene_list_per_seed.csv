@@ -1,0 +1,4 @@
+seed,retrieval_exact,retrieval_related,significant_terms,random_control_significant,local with retrieval exact,local with retrieval related,local without retrieval exact,local without retrieval related
+0,0,0,245,4,0,0,0,0
+1,0,0,325,1,0,0,0,0
+42,0,0,296,0,0,0,0,0

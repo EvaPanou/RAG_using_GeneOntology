@@ -1,0 +1,66 @@
+go-basic.obo: FAILED | https://purl.obolibrary.org/obo/go/go-basic.obo -> HTTPError: HTTP Error 403: Forbidden || https://current.geneontology.org/ontology/go-basic.obo -> HTTPError: HTTP Error 403: Forbidden
+HUMAN-uniprot.gaf.gz: FAILED | https://current.geneontology.org/annotations/gaf/HUMAN-uniprot.gaf.gz -> HTTPError: HTTP Error 403: Forbidden
+sentence-transformers/all-MiniLM-L6-v2: reachable
+Qwen/Qwen2.5-0.5B-Instruct: reachable
+go-basic.obo: downloaded | https://purl.obolibrary.org/obo/go/go-basic.obo | 32.2 megabytes
+HUMAN-uniprot.gaf.gz: downloaded | https://current.geneontology.org/annotations/gaf/HUMAN-uniprot.gaf.gz | 12.1 megabytes
+sentence-transformers/all-MiniLM-L6-v2: reachable
+Qwen/Qwen2.5-0.5B-Instruct: reachable
+  format-version: 1.2
+  data-version: releases/2026-07-26
+  !gaf-version: 2.2
+  !generated-by: UniProt
+  !date-generated: 2026-07-28 19:42
+  !go-version: http://purl.obolibrary.org/obo/go/releases/2026-07-26/extensions/go-plus.ofn
+Terms read: 48340 | obsolete terms removed: 10248 | terms kept: 38092
+  terms in biological_process: 23974
+  terms in molecular_function: 10041
+  terms in cellular_component: 4077
+Terms without a definition: 0
+Terms with no parent term: 3
+Terms whose name appears more than once: 0
+Terms whose definition is identical to another term's definition: 0
+Annotation lines read: 910476
+Skipped, negative relation (NOT): 1497 | skipped, term not in the ontology table: 0
+Genes with at least one annotation (used as the background): 38810
+Terms with at least one gene after propagation: 21102
+Most common values in the taxon column: [('taxon:9606', 909626), ('taxon:9606|taxon:562', 92), ('taxon:9606|taxon:1280', 83)]
+Embedding size (printed by the package): 384
+Text length limit in word pieces (printed by the package): 256
+Terms with a text longer than the limit (the end is cut off): 30
+Chance that one named term is among five random terms: 0.00013
+Backends that work: ['local']
+Questions with a known correct term: 8 of 10
+Embedding search: correct term first in 3, among the five in 5, related among the five in 7 of 8 questions
+Naive word search: correct term among the five in 2, related among the five in 5 of 8 questions
+Chance level for the correct term among five random terms, per question: 0.00013
+Backends that work: ['local']
+Questions with a known correct term: 8 of 10
+Embedding search: correct term first in 3, among the five in 5, related among the five in 7 of 8 questions
+Naive word search: correct term among the five in 2, related among the five in 5 of 8 questions
+Chance level for the correct term among five random terms, per question: 0.00013
+local | with retrieval | answers: 8 | identifiers cited: 5 | existing: 5 | inside retrieved: 5 | answers passing the strict check: 1 | answers with a relevant term: 1
+local | without retrieval | answers: 8 | identifiers cited: 0 | existing: 0 | inside retrieved: 0 | answers passing the strict check: 0 | answers with a relevant term: 0
+Mean of the highest similarity between two retrieved terms: 0.844
+Seed term: GO:0006914 | autophagy | genes annotated to it (after propagation): 268
+Control: enrichment probability value 2.807e-66 | exact counting 2.807e-66 | agree: True
+Seed 0: significant terms 245 | rank of the seed term 1 | significant terms in a random control list of 40 genes: 4
+Seed 0 | retrieval only (five terms): exact overlap with the answer key 0, related overlap 0
+Seed 0 | local, with retrieval: identifiers cited 5, not in the ontology 0, passes the citation check True, exact overlap 0, related overlap 0
+Seed 0 | local, without retrieval: identifiers cited 0, not in the ontology 0, passes the citation check False, exact overlap 0, related overlap 0
+Seed 1: significant terms 325 | rank of the seed term 2 | significant terms in a random control list of 40 genes: 1
+Seed 1 | retrieval only (five terms): exact overlap with the answer key 0, related overlap 0
+Seed 1 | local, with retrieval: identifiers cited 3, not in the ontology 0, passes the citation check True, exact overlap 0, related overlap 0
+Seed 1 | local, without retrieval: identifiers cited 0, not in the ontology 0, passes the citation check False, exact overlap 0, related overlap 0
+Seed 42: significant terms 296 | rank of the seed term 1 | significant terms in a random control list of 40 genes: 0
+Seed 42 | retrieval only (five terms): exact overlap with the answer key 0, related overlap 0
+Seed 42 | local, with retrieval: identifiers cited 3, not in the ontology 0, passes the citation check True, exact overlap 0, related overlap 0
+Seed 42 | local, without retrieval: identifiers cited 0, not in the ontology 0, passes the citation check False, exact overlap 0, related overlap 0
+retrieval_exact: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
+retrieval_related: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
+significant_terms: mean 288.67, standard deviation 40.5 over seeds [0, 1, 42]
+random_control_significant: mean 1.67, standard deviation 2.08 over seeds [0, 1, 42]
+local with retrieval exact: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
+local with retrieval related: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
+local without retrieval exact: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
+local without retrieval related: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]

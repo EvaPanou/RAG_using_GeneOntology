@@ -1,0 +1,17 @@
+question,backend,condition,cited,existing,inside_retrieved,passes,relevant
+How do cells digest and recycle their own components?,local,with retrieval,0,0,0,False,False
+How do cells digest and recycle their own components?,local,without retrieval,0,0,0,False,False
+How do cells repair damaged genetic material?,local,with retrieval,0,0,0,False,False
+How do cells repair damaged genetic material?,local,without retrieval,0,0,0,False,False
+What is the process of programmed cell death?,local,with retrieval,0,0,0,False,False
+What is the process of programmed cell death?,local,without retrieval,0,0,0,False,False
+How do cells respond to oxidative stress?,local,with retrieval,0,0,0,False,False
+How do cells respond to oxidative stress?,local,without retrieval,0,0,0,False,False
+How is insulin released from pancreatic cells?,local,with retrieval,0,0,0,False,False
+How is insulin released from pancreatic cells?,local,without retrieval,0,0,0,False,False
+How do neurons pass signals across a synapse?,local,with retrieval,0,0,0,False,False
+How do neurons pass signals across a synapse?,local,without retrieval,0,0,0,False,False
+chromatin remodelling,local,with retrieval,5,5,5,True,True
+chromatin remodelling,local,without retrieval,0,0,0,False,False
+How does the body defend itself against bacteria?,local,with retrieval,0,0,0,False,False
+How does the body defend itself against bacteria?,local,without retrieval,0,0,0,False,False
