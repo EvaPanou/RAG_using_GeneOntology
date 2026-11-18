@@ -1,0 +1,11 @@
+{
+  "study": "GSE179325",
+  "platform": "GPL21145",
+  "seeds": [
+    0,
+    1,
+    42
+  ],
+  "sites_in_study": 768067,
+  "date": "2026-11-18"
+}

@@ -1,0 +1,10 @@
+# Packages for the Gene Ontology retrieval project.
+# Step 1 of the notebook replaces this file with the exact versions it used.
+torch
+numpy
+pandas
+scipy
+sentence-transformers
+transformers
+huggingface_hub
+anthropic
