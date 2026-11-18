@@ -65,6 +65,19 @@ lists_to_test <- list(
 annotation_table <- minfi::getAnnotation(IlluminaHumanMethylationEPICanno.ilm10b4.hg19)
 cat("Annotation loaded:", nrow(annotation_table), "rows at", format(Sys.time()), "\n")
 
+# Table for the Python notebook: the gene names of every site on the array.
+dir.create("data", showWarnings = FALSE)
+site_to_gene_table <- data.frame(
+    site = rownames(annotation_table),
+    chromosome = annotation_table$chr,
+    position = annotation_table$pos,
+    gene_names = annotation_table$UCSC_RefGene_Name,
+    gene_groups = annotation_table$UCSC_RefGene_Group,
+    stringsAsFactors = FALSE
+)
+write.csv(site_to_gene_table, file.path("data", "site_to_gene_table.csv"), row.names = FALSE)
+cat("Site-to-gene table written:", nrow(site_to_gene_table), "rows\n")
+
 for (list_name in names(lists_to_test)) {
     significant_sites <- lists_to_test[[list_name]]
     if (length(significant_sites) < 5) {
@@ -73,7 +86,8 @@ for (list_name in names(lists_to_test)) {
     }
     cat("Starting", list_name, "at", format(Sys.time()), "\n")
     # all.cpg = the fair comparison group (every site of the study). prior.prob = TRUE corrects for the
-    # unequal number of sites per gene. sig.genes = TRUE adds the genes behind each term.
+    # unequal number of sites per gene. sig.genes is off: it only lists the genes behind each term, and it
+    # made the call far slower (tested: 156 seconds without it, no result after 35 minutes with it).
     gene_ontology_result <- gometh(
         sig.cpg = significant_sites,
         all.cpg = background_sites,
@@ -82,10 +96,26 @@ for (list_name in names(lists_to_test)) {
         anno = annotation_table,
         prior.prob = TRUE,
         plot.bias = FALSE,
-        sig.genes = TRUE
+        sig.genes = FALSE
     )
     gene_ontology_result <- gene_ontology_result[gene_ontology_result$ONTOLOGY == ontology_to_keep, ]
     gene_ontology_result <- gene_ontology_result[order(gene_ontology_result$P.DE), ]
+
+    # Genes behind the 20 lowest-p terms: the genes of your sites that belong to each term.
+    # (A plain lookup with the array annotation and org.Hs.eg.db; it does not change any p-value.)
+    site_gene_names <- annotation_table[significant_sites, "UCSC_RefGene_Name"]
+    genes_of_list <- unique(unlist(strsplit(site_gene_names[site_gene_names != ""], ";")))
+    top_terms <- head(rownames(gene_ontology_result), 20)
+    term_gene_table <- AnnotationDbi::select(org.Hs.eg.db::org.Hs.eg.db, keys = top_terms,
+                                             keytype = "GOALL", columns = "SYMBOL")
+    gene_ontology_result$genes_in_list <- ""
+    gene_ontology_result$genes_listed_count <- NA_integer_
+    for (term_id in top_terms) {
+        genes_here <- sort(intersect(genes_of_list, term_gene_table$SYMBOL[term_gene_table$GOALL == term_id]))
+        gene_ontology_result[term_id, "genes_in_list"] <- paste(genes_here, collapse = ";")
+        gene_ontology_result[term_id, "genes_listed_count"] <- length(genes_here)
+    }
+
     output_path <- file.path(results_folder, paste0("missmethyl_", list_name, ".csv"))
     write.csv(gene_ontology_result, output_path)
     cat(list_name, "| sites tested:", length(significant_sites), "| terms with FDR below 0.05:",
