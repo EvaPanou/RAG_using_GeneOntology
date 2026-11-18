@@ -1,5 +1,4 @@
 .venv/
-data/
 __pycache__/
 .ipynb_checkpoints/
 inputs/methylation/all_sites_in_study.txt
