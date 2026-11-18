@@ -61,12 +61,17 @@ lists_to_test <- list(
 )
 
 # ---------- Step 3: the test ----------
+# The annotation of the array is loaded once and reused for every list. Without it, gometh builds it again for each list.
+annotation_table <- minfi::getAnnotation(IlluminaHumanMethylationEPICanno.ilm10b4.hg19)
+cat("Annotation loaded:", nrow(annotation_table), "rows at", format(Sys.time()), "\n")
+
 for (list_name in names(lists_to_test)) {
     significant_sites <- lists_to_test[[list_name]]
     if (length(significant_sites) < 5) {
         cat(list_name, ": fewer than 5 sites, skipped.\n")
         next
     }
+    cat("Starting", list_name, "at", format(Sys.time()), "\n")
     # all.cpg = the fair comparison group (every site of the study). prior.prob = TRUE corrects for the
     # unequal number of sites per gene. sig.genes = TRUE adds the genes behind each term.
     gene_ontology_result <- gometh(
@@ -74,6 +79,7 @@ for (list_name in names(lists_to_test)) {
         all.cpg = background_sites,
         collection = "GO",
         array.type = array_type,
+        anno = annotation_table,
         prior.prob = TRUE,
         plot.bias = FALSE,
         sig.genes = TRUE
@@ -83,6 +89,6 @@ for (list_name in names(lists_to_test)) {
     output_path <- file.path(results_folder, paste0("missmethyl_", list_name, ".csv"))
     write.csv(gene_ontology_result, output_path)
     cat(list_name, "| sites tested:", length(significant_sites), "| terms with FDR below 0.05:",
-        sum(gene_ontology_result$FDR < 0.05), "| written to", output_path, "\n")
+        sum(gene_ontology_result$FDR < 0.05), "| written to", output_path, "at", format(Sys.time()), "\n")
 }
 cat("missMethyl check finished.\n")
