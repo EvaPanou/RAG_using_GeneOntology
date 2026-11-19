@@ -39,11 +39,11 @@ Seed 0: significant terms 245 | rank of the seed term 2 | significant terms in a
 Seed 0 | retrieval only (five terms): exact overlap with the answer key 0, related overlap 0
 Seed 0 | local, with retrieval: identifiers cited 5, not in the ontology 0, passes the citation check True, exact overlap 0, related overlap 0
 Seed 0 | local, without retrieval: identifiers cited 0, not in the ontology 0, passes the citation check False, exact overlap 0, related overlap 0
-Seed 1: significant terms 325 | rank of the seed term 1 | significant terms in a random control list of 40 genes: 1
+Seed 1: significant terms 325 | rank of the seed term 2 | significant terms in a random control list of 40 genes: 1
 Seed 1 | retrieval only (five terms): exact overlap with the answer key 0, related overlap 0
 Seed 1 | local, with retrieval: identifiers cited 3, not in the ontology 0, passes the citation check True, exact overlap 0, related overlap 0
 Seed 1 | local, without retrieval: identifiers cited 0, not in the ontology 0, passes the citation check False, exact overlap 0, related overlap 0
-Seed 42: significant terms 296 | rank of the seed term 1 | significant terms in a random control list of 40 genes: 0
+Seed 42: significant terms 296 | rank of the seed term 2 | significant terms in a random control list of 40 genes: 0
 Seed 42 | retrieval only (five terms): exact overlap with the answer key 0, related overlap 0
 Seed 42 | local, with retrieval: identifiers cited 3, not in the ontology 0, passes the citation check True, exact overlap 0, related overlap 0
 Seed 42 | local, without retrieval: identifiers cited 0, not in the ontology 0, passes the citation check False, exact overlap 0, related overlap 0
@@ -55,13 +55,6 @@ local with retrieval exact: mean 0.0, standard deviation 0.0 over seeds [0, 1, 4
 local with retrieval related: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
 local without retrieval exact: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
 local without retrieval related: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
-Seed 0: weights other than zero 126 | after removing ch. sites 126
-Seed 1: weights other than zero 755 | after removing ch. sites 753
-Seed 42: weights other than zero 186 | after removing ch. sites 186
-Sites with a weight other than zero in all seeds: 36
-Site-to-gene table: 865859 sites, of which with at least one gene name 616598
-Background: all sites of the study | cg sites 765569 | genes named for them 25670 | of which with a matching annotated symbol (the background genes) 16686
-Terms tested in the restricted background (biological process, 5 to 1500 genes inside the background): 7729
 Seed 0: weights other than zero 126 | after removing ch. sites 126
 Seed 1: weights other than zero 755 | after removing ch. sites 753
 Seed 42: weights other than zero 186 | after removing ch. sites 186
