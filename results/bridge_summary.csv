@@ -1,0 +1,5 @@
+list,sites,genes_with_matching_symbol,python_significant_terms,python_smallest_probability_value,permutation_share_smallest,missmethyl_significant_terms,top_ten_shared,rank_correlation,terms_compared
+seed_0,126,75,7,6.777644078838443e-05,0.2315369261477046,0,8,0.825,566
+seed_1,753,434,25,2.200224063723855e-09,0.1596806387225549,0,0,0.764,2195
+seed_42,186,118,13,2.344301168611008e-15,0.02594810379241517,0,5,0.828,839
+all_seeds,36,20,3,0.00031079227800638034,0.3992015968063872,0,1,0.756,68

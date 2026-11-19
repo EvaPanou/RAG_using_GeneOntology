@@ -1,9 +1,5 @@
-go-basic.obo: FAILED | https://purl.obolibrary.org/obo/go/go-basic.obo -> HTTPError: HTTP Error 403: Forbidden || https://current.geneontology.org/ontology/go-basic.obo -> HTTPError: HTTP Error 403: Forbidden
-HUMAN-uniprot.gaf.gz: FAILED | https://current.geneontology.org/annotations/gaf/HUMAN-uniprot.gaf.gz -> HTTPError: HTTP Error 403: Forbidden
-sentence-transformers/all-MiniLM-L6-v2: reachable
-Qwen/Qwen2.5-0.5B-Instruct: reachable
-go-basic.obo: downloaded | https://purl.obolibrary.org/obo/go/go-basic.obo | 32.2 megabytes
-HUMAN-uniprot.gaf.gz: downloaded | https://current.geneontology.org/annotations/gaf/HUMAN-uniprot.gaf.gz | 12.1 megabytes
+go-basic.obo: already on disk | 32.2 megabytes
+HUMAN-uniprot.gaf.gz: already on disk | 12.1 megabytes
 sentence-transformers/all-MiniLM-L6-v2: reachable
 Qwen/Qwen2.5-0.5B-Instruct: reachable
   format-version: 1.2
@@ -34,21 +30,16 @@ Questions with a known correct term: 8 of 10
 Embedding search: correct term first in 3, among the five in 5, related among the five in 7 of 8 questions
 Naive word search: correct term among the five in 2, related among the five in 5 of 8 questions
 Chance level for the correct term among five random terms, per question: 0.00013
-Backends that work: ['local']
-Questions with a known correct term: 8 of 10
-Embedding search: correct term first in 3, among the five in 5, related among the five in 7 of 8 questions
-Naive word search: correct term among the five in 2, related among the five in 5 of 8 questions
-Chance level for the correct term among five random terms, per question: 0.00013
 local | with retrieval | answers: 8 | identifiers cited: 5 | existing: 5 | inside retrieved: 5 | answers passing the strict check: 1 | answers with a relevant term: 1
 local | without retrieval | answers: 8 | identifiers cited: 0 | existing: 0 | inside retrieved: 0 | answers passing the strict check: 0 | answers with a relevant term: 0
 Mean of the highest similarity between two retrieved terms: 0.844
 Seed term: GO:0006914 | autophagy | genes annotated to it (after propagation): 268
 Control: enrichment probability value 2.807e-66 | exact counting 2.807e-66 | agree: True
-Seed 0: significant terms 245 | rank of the seed term 1 | significant terms in a random control list of 40 genes: 4
+Seed 0: significant terms 245 | rank of the seed term 2 | significant terms in a random control list of 40 genes: 4
 Seed 0 | retrieval only (five terms): exact overlap with the answer key 0, related overlap 0
 Seed 0 | local, with retrieval: identifiers cited 5, not in the ontology 0, passes the citation check True, exact overlap 0, related overlap 0
 Seed 0 | local, without retrieval: identifiers cited 0, not in the ontology 0, passes the citation check False, exact overlap 0, related overlap 0
-Seed 1: significant terms 325 | rank of the seed term 2 | significant terms in a random control list of 40 genes: 1
+Seed 1: significant terms 325 | rank of the seed term 1 | significant terms in a random control list of 40 genes: 1
 Seed 1 | retrieval only (five terms): exact overlap with the answer key 0, related overlap 0
 Seed 1 | local, with retrieval: identifiers cited 3, not in the ontology 0, passes the citation check True, exact overlap 0, related overlap 0
 Seed 1 | local, without retrieval: identifiers cited 0, not in the ontology 0, passes the citation check False, exact overlap 0, related overlap 0
@@ -64,3 +55,29 @@ local with retrieval exact: mean 0.0, standard deviation 0.0 over seeds [0, 1, 4
 local with retrieval related: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
 local without retrieval exact: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
 local without retrieval related: mean 0.0, standard deviation 0.0 over seeds [0, 1, 42]
+Seed 0: weights other than zero 126 | after removing ch. sites 126
+Seed 1: weights other than zero 755 | after removing ch. sites 753
+Seed 42: weights other than zero 186 | after removing ch. sites 186
+Sites with a weight other than zero in all seeds: 36
+Site-to-gene table: 865859 sites, of which with at least one gene name 616598
+Background: all sites of the study | cg sites 765569 | genes named for them 25670 | of which with a matching annotated symbol (the background genes) 16686
+Terms tested in the restricted background (biological process, 5 to 1500 genes inside the background): 7729
+Seed 0: weights other than zero 126 | after removing ch. sites 126
+Seed 1: weights other than zero 755 | after removing ch. sites 753
+Seed 42: weights other than zero 186 | after removing ch. sites 186
+Sites with a weight other than zero in all seeds: 36
+Site-to-gene table: 865859 sites, of which with at least one gene name 616598
+Background: all sites of the study | cg sites 765569 | genes named for them 25670 | of which with a matching annotated symbol (the background genes) 16686
+Terms tested in the restricted background (biological process, 5 to 1500 genes inside the background): 7729
+Methylation list seed_0: sites 126 | not in the annotation table 0 | without a gene name 31 | genes named 98 | genes with a matching annotated symbol 75 | terms tested 566 | significant terms (adjusted below 0.05) 7
+Methylation list seed_1: sites 753 | not in the annotation table 0 | without a gene name 232 | genes named 525 | genes with a matching annotated symbol 434 | terms tested 2195 | significant terms (adjusted below 0.05) 25
+Methylation list seed_42: sites 186 | not in the annotation table 0 | without a gene name 59 | genes named 139 | genes with a matching annotated symbol 118 | terms tested 839 | significant terms (adjusted below 0.05) 13
+Methylation list all_seeds: sites 36 | not in the annotation table 0 | without a gene name 8 | genes named 30 | genes with a matching annotated symbol 20 | terms tested 68 | significant terms (adjusted below 0.05) 3
+Permutation test, list seed_0 (500 random lists of 126 sites): smallest probability value observed 6.78e-05 | share of random lists with an equal or smaller smallest value 0.232 | top term: inner ear development (permutation value 0.002)
+Permutation test, list seed_1 (500 random lists of 753 sites): smallest probability value observed 2.20e-09 | share of random lists with an equal or smaller smallest value 0.160 | top term: homophilic cell-cell adhesion (permutation value 0.124)
+Permutation test, list seed_42 (500 random lists of 186 sites): smallest probability value observed 2.34e-15 | share of random lists with an equal or smaller smallest value 0.026 | top term: homophilic cell-cell adhesion (permutation value 0.020)
+Permutation test, list all_seeds (500 random lists of 36 sites): smallest probability value observed 3.11e-04 | share of random lists with an equal or smaller smallest value 0.399 | top term: stem cell proliferation (permutation value 0.002)
+Comparison with missMethyl, list seed_0: significant terms 7 here and 0 there | terms shared among the ten lowest 8 of 10 | rank correlation of the probability values (Spearman) 0.825 over 566 terms in both tables
+Comparison with missMethyl, list seed_1: significant terms 25 here and 0 there | terms shared among the ten lowest 0 of 10 | rank correlation of the probability values (Spearman) 0.764 over 2195 terms in both tables
+Comparison with missMethyl, list seed_42: significant terms 13 here and 0 there | terms shared among the ten lowest 5 of 10 | rank correlation of the probability values (Spearman) 0.828 over 839 terms in both tables
+Comparison with missMethyl, list all_seeds: significant terms 3 here and 0 there | terms shared among the ten lowest 1 of 10 | rank correlation of the probability values (Spearman) 0.756 over 68 terms in both tables
