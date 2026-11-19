@@ -1,11 +1,12 @@
-# missmethyl_check.R - Gene Ontology test of the age-related methylation sites with the Bioconductor package missMethyl.
+# 01_missmethyl_check.R - Gene Ontology test of the age-related methylation sites with the Bioconductor package missMethyl.
 # What it does: takes the sites the elastic net chose (from the methylation project) and asks which
 # Gene Ontology terms are over-represented among their genes. The function gometh corrects for the fact that
 # some genes have many more sites on the array than others (it uses the annotation of the EPIC array).
 # This is the reference result that the Python enrichment in the notebook is compared with.
 #
-# Run from the repository folder:  Rscript r/missmethyl_check.R
-# Expected output: one line per list of sites, and the files results/missmethyl_*.csv
+# Run from the repository folder:  Rscript 01_missmethyl_check.R
+# Expected output: one line per list of sites, the files results/missmethyl_*.csv and data/site_to_gene_table.csv.
+# A list whose result file already exists is skipped. To compute everything again, set RERUN_R=1 before running.
 
 # ---------- Settings ----------
 input_folder <- file.path("input", "methylation_repo")
@@ -84,6 +85,12 @@ for (list_name in names(lists_to_test)) {
         cat(list_name, ": fewer than 5 sites, skipped.\n")
         next
     }
+    output_path <- file.path(results_folder, paste0("missmethyl_", list_name, ".csv"))
+    if (file.exists(output_path) && Sys.getenv("RERUN_R") != "1") {
+        cat(list_name, ": result file already exists, skipped.\n")
+        next
+    }
+
     cat("Starting", list_name, "at", format(Sys.time()), "\n")
     # all.cpg = the fair comparison group (every site of the study). prior.prob = TRUE corrects for the
     # unequal number of sites per gene. sig.genes is off: it only lists the genes behind each term, and it
@@ -116,7 +123,6 @@ for (list_name in names(lists_to_test)) {
         gene_ontology_result[term_id, "genes_listed_count"] <- length(genes_here)
     }
 
-    output_path <- file.path(results_folder, paste0("missmethyl_", list_name, ".csv"))
     write.csv(gene_ontology_result, output_path)
     cat(list_name, "| sites tested:", length(significant_sites), "| terms with FDR below 0.05:",
         sum(gene_ontology_result$FDR < 0.05), "| written to", output_path, "at", format(Sys.time()), "\n")
