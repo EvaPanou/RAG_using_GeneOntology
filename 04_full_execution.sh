@@ -22,7 +22,7 @@ python -m pip install nbconvert ipykernel      # needed only to run the notebook
 
 # ---------- Part 2: R reference test with missMethyl ----------
 # This part takes long (the first run also installs Bioconductor packages). It is skipped when its result already exists.
-if [ -f "results/missmethyl_all_seeds.csv" ] && [ "$RERUN_R" != "1" ]; then
+if [ -f "results/missmethyl_all_seeds.csv" ] && [ -f "data/site_to_gene_table.csv" ] && [ "$RERUN_R" != "1" ]; then
     echo "The missMethyl results already exist in results/. Skipping the R part."
 else
     for required_file in \
